@@ -1,11 +1,9 @@
 div{
     background-color: #EEE;
     width: 250px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
-div:hover{
-    overflow: visible;
+    border: 1px solid #F00;
+    padding: 2px;
+    /* white-space: normal; */
+    /* white-space: nowrap; */
+    word-wrap: break-word;
 }
