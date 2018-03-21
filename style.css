@@ -1,28 +1,16 @@
 * {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
 
-section {
-    width: 940px;
-    margin: 20px auto;
-    background: #EEE;
-    overflow: hidden;
+img{
+    margin: 50px auto;
+    border-radius: 50%;
+    padding: 3px;
+    background-color: #FFF;
+    border: 1px solid #CCC;
 }
 
-.left {
-    float: left;
-    width: 340px;
-    background: #00F;
-    color: yellow;
-    padding: 10px;
-    border: 1px solid red;
-}
-
-.right {
-    float: right;
-    width: 600px;
-    background: #0F0;
-    color: red;
+img:hover{
+    box-shadow: 10px 10px 10px #DDD,
+                -10px -10px 10px #DDD;
 }
