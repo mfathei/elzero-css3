@@ -1,14 +1,28 @@
-div {
-    width: 200px;
-    height: 200px;
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+section {
+    width: 940px;
     margin: 20px auto;
-    background-color: #EEE;
-    border: 1px solid #CCC;
-    box-shadow: Horizontal Shadow | Vertical Shadow | Blur | Spread | inset, outset;
-    /* box-shadow: 10px 10px; */
-    /* box-shadow: 10px 10px #DDD; */
-    /* box-shadow: -5px -5px #DDD; */
-    /* box-shadow: -5px -5px 5px #DDD; */
-    /* box-shadow: -5px -5px 5px #DDF inset; */
-    box-shadow: -5px -5px 5px #1DF, -5px -5px 5px #0F2, -5px -5px 5px #080;
+    background: #EEE;
+    overflow: hidden;
+}
+
+.left {
+    float: left;
+    width: 340px;
+    background: #00F;
+    color: yellow;
+    padding: 10px;
+    border: 1px solid red;
+}
+
+.right {
+    float: right;
+    width: 600px;
+    background: #0F0;
+    color: red;
 }
