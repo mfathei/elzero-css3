@@ -1,13 +1,14 @@
-div{
+div {
     width: 200px;
     height: 200px;
     margin: 20px auto;
     background-color: #EEE;
     border: 1px solid #CCC;
-    
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -o-border-radius: 50%;
-    -ms-border-radius: 50%;
-    border-radius: 50px;
+    box-shadow: Horizontal Shadow | Vertical Shadow | Blur | Spread | inset, outset;
+    /* box-shadow: 10px 10px; */
+    /* box-shadow: 10px 10px #DDD; */
+    /* box-shadow: -5px -5px #DDD; */
+    /* box-shadow: -5px -5px 5px #DDD; */
+    /* box-shadow: -5px -5px 5px #DDF inset; */
+    box-shadow: -5px -5px 5px #1DF, -5px -5px 5px #0F2, -5px -5px 5px #080;
 }
