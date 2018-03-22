@@ -3,13 +3,26 @@
     box-sizing: border-box;
 }
 
+body{
+    perspective: 600px;
+}
+
 img {
+    display: block;
+    margin: 50px auto;
+    width: 700px;
+    height: 300px;
+    padding: 5px;
+    background-color: #FFF;
+    border: 1px solid #EEE;
     -webkit-transition: all 0.5s ease-in-out;
-    transition: all 1s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
 
 img:hover {
-    /* transform: rotateX(180deg) */
-    /* transform: rotateY(180deg) */
-    transform: rotateZ(180deg)
+    /* transform: translate3d(200px, 100px, 100px); */
+    /* transform: translateX(200px); */
+    /* transform: translateY(200px); */
+    /* transform: translateZ(200px); */
+    transform: translateZ(-800px);
 }
