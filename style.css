@@ -3,46 +3,22 @@
     box-sizing: border-box;
 }
 
+body {
+    perspective: 600px;
+}
+
 div {
-    margin: 50px 0 100px 0;
-}
-
-div:first-of-type {
-    perspective: 500px;
-    perspective-origin: left;
-}
-
-div:nth-of-type(2) {
-    perspective: 300px;
-    /* perspective-origin: top; */
-    perspective-origin: right;
-}
-
-div:last-of-type {
-    perspective: 200px;
-    /* perspective-origin: center; */
-    /* perspective-origin: right; */
-    /* perspective-origin: bottom; */
-    perspective-origin: top;
-}
-
-img {
-    display: block;
-    margin: 50px auto;
-    width: 700px;
+    width: 300px;
     height: 300px;
-    padding: 5px;
-    background-color: #FFF;
-    border: 1px solid #EEE;
-    -webkit-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
-    /* transform: translateZ(99px); */
-    /* transform: rotateX(60deg); */
-    transform: translateZ(100px);
+    margin: 50px auto;
+    background-color: #F00;
+    /* transform: rotateX(40deg); */
+    /* transform-origin: 50% 50%; */
+    transition: all 1s ease-in-out;
 }
 
-/* http://ds-overdesign.com/transform/matrix3d.html */
-
-img:hover {
-    /* transform: translateZ(200px); */
+div:hover{
+    transform: rotate(360deg);
+    /* transform-origin: top left; */
+    transform-origin: right bottom;
 }
