@@ -7,18 +7,34 @@ body {
     perspective: 600px;
 }
 
-div {
+.father {
     width: 300px;
     height: 300px;
+    position: relative;
     margin: 50px auto;
-    background-color: #F00;
-    /* transform: rotateX(40deg); */
-    /* transform-origin: 50% 50%; */
+    background-color: #080;
     transition: all 1s ease-in-out;
+    transform: rotateY(20deg);
+    /* transform-style: flat; */
+    transform-style: preserve-3d;
 }
 
-div:hover{
-    transform: rotate(360deg);
-    /* transform-origin: top left; */
-    transform-origin: right bottom;
+.child1 {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    background-color: #F00;
+    transform: translateZ(50px) rotateY(45deg);
+}
+
+.child2 {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    background-color: #00F;
+    transform: translateZ(150px) rotateX(45deg);
 }
