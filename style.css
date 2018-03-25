@@ -3,8 +3,27 @@
     box-sizing: border-box;
 }
 
-body {
-    perspective: 600px;
+div {
+    margin: 50px 0 100px 0;
+}
+
+div:first-of-type {
+    perspective: 500px;
+    perspective-origin: left;
+}
+
+div:nth-of-type(2) {
+    perspective: 300px;
+    /* perspective-origin: top; */
+    perspective-origin: right;
+}
+
+div:last-of-type {
+    perspective: 200px;
+    /* perspective-origin: center; */
+    /* perspective-origin: right; */
+    /* perspective-origin: bottom; */
+    perspective-origin: top;
 }
 
 img {
@@ -17,10 +36,13 @@ img {
     border: 1px solid #EEE;
     -webkit-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
+    /* transform: translateZ(99px); */
+    /* transform: rotateX(60deg); */
+    transform: translateZ(100px);
 }
 
 /* http://ds-overdesign.com/transform/matrix3d.html */
 
 img:hover {
-    transform: matrix3d(0.94, -0.34, 0.00, 0, 0.34, 0.6016, 0.77, 0, 0, -0.77, 0.64, 0, 0, 0, 0, 1);
+    /* transform: translateZ(200px); */
 }
