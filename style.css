@@ -17,7 +17,6 @@ body {
 }
 
 .container div {
-    width: 150px;
     background: #080;
     max-height: 100px;
 }
@@ -28,12 +27,11 @@ body {
 
 .container .two {
     background-color: #00F;
-    flex-shrink: 0;
 }
 
 .container .three {
     background-color: #F00;
-    flex-shrink: 3
+    flex-basis: 150px;
 }
 
 .container .four {
