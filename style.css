@@ -9,24 +9,26 @@ body {
 }
 
 .container {
-    width: 800px;
+    width: 200px;
+    height: 400px;
     margin: 50px auto;
     background-color: #EEE;
     display: flex;
-    /* flex-flow: flex-direction, flex-wrap */
-    flex-flow: row wrap;
-    /* justify-content: flex-start; */
-    /* justify-content: flex-end; */
-    /* justify-content: center; */
-    /* justify-content: space-evenly; */
-    /* justify-content: space-between; */
-    justify-content: space-around;
+    flex-wrap: wrap;
+/*    align-items: flex-end;*/
+/*    align-items: center;*/
+/*    align-items: baseline;*/
+/*    align-content: stretch;*/
+/*    align-content: flex-start;*/
+/*    align-content: center;*/
+/*    justify-content: center;*/
+    align-content: space-around;
 }
 
 .container div {
-    width: 200px;
-    height: 100px;
+    width: 180px;
     background: #080;
+    max-height: 100px;
 }
 
 .container div:first-of-type {
