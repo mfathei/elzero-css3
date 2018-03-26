@@ -1,85 +1,12 @@
-* {
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-}
 
-body {
-    perspective: 1000px;
-}
 
-.card {
+div {
     width: 300px;
-    height: 390px;
+    height: 200px;
     margin: 50px auto;
-    position: relative;
-    transition: all 1s ease-in-out;
-    transform-style: preserve-3d;
-}
-
-.card>div {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #EEE;
-    color: #777;
-    border-radius: 10px;
-    border: #CCC 1px solid;
-    font-family: Arial, Tahoma;
-    text-align: center;
-}
-
-.card:hover {
-    transform: rotateY(180deg);
-}
-
-.card .front {
-    z-index: 2;
-    backface-visibility: hidden;
-}
-
-.card .front header {
-    background: #444444;
-    width: 100%;
-    height: 80px;
-    border-radius: 10px 10px 0 0;
-    margin-bottom: 55px;
-}
-
-.card .front img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    position: relative;
-    top: 30px;
-}
-
-.card .front h3 {
-    margin-bottom: 5px;
-}
-
-.card .front p {
-    margin: 0 auto;
-    width: 90%;
-    line-height: 1.6;
-}
-
-.card .front span {
-    display: inline-block;
-    margin-top: 5px;
-    color: #785a98;
-    font-weight: bold;
-}
-
-.card .back {
-    z-index: 1;
-    transform: rotateY(180deg);
-    backface-visibility: hidden;
-}
-
-.card .back ul {
-    list-style: none;
-    padding: 0;
-    line-height: 2;
+    color: #FFF;
+    background: url('./office-computer-14933938242Zj.jpg');
+    /* background-size: 100% 100%; */
+    /* background-size: 50% 100%; */
+    background-size: cover;
 }
