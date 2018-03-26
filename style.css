@@ -17,6 +17,7 @@ body {
 }
 
 .container div {
+/*    width: 300px;*/
     background: #080;
     max-height: 100px;
 }
@@ -31,7 +32,10 @@ body {
 
 .container .three {
     background-color: #F00;
-    flex-basis: 150px;
+/*    flex: flex-grow flex-shrink flex-basis;*/
+/*    flex: 0 1 auto;*/
+    flex: 1 1 auto;
+    flex: 1 2 50px;
 }
 
 .container .four {
