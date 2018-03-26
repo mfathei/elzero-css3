@@ -1,12 +1,13 @@
 
 
 div {
-    width: 300px;
-    height: 200px;
-    margin: 50px auto;
+    width: 80%;
+    height: 400px;
+    border: #00F 3px dotted;
     color: #FFF;
-    background: url('./office-computer-14933938242Zj.jpg');
-    /* background-size: 100% 100%; */
-    /* background-size: 50% 100%; */
-    background-size: cover;
+    background: #F00;
+    /* background-clip: border-box; */
+    padding: 50px;
+    /* background-clip: content-box; */
+    background-clip: padding-box;
 }
