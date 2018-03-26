@@ -9,20 +9,11 @@ body {
 }
 
 .container {
-    width: 200px;
+    width: 800px;
     height: 400px;
     margin: 50px auto;
     background-color: #EEE;
     display: flex;
-    flex-wrap: wrap;
-/*    align-items: flex-end;*/
-/*    align-items: center;*/
-/*    align-items: baseline;*/
-/*    align-content: stretch;*/
-/*    align-content: flex-start;*/
-/*    align-content: center;*/
-/*    justify-content: center;*/
-    align-content: space-around;
 }
 
 .container div {
@@ -31,14 +22,22 @@ body {
     max-height: 100px;
 }
 
-.container div:first-of-type {
+.container .one {
     background-color: #080;
+    order: 1;
 }
 
-.container div:nth-of-type(2) {
+.container .two {
     background-color: #00F;
+    order: 3;
 }
 
-.container div:last-of-type {
+.container .three {
     background-color: #F00;
+    order: 2;
+}
+
+.container .four {
+    background-color: #e4b016;
+    order: 4;
 }
