@@ -5,20 +5,14 @@
 }
 
 div {
-    width: 100px;
-    height: 100px;
+    width: 300px;
+    height: 200px;
     margin: 50px auto;
     border: #CCC 1px solid;
     background-color: #EEE;
-    /* overflow: hidden; */
-    /* overflow: scroll; */
-    overflow-x: hidden;
-    overflow-y: scroll;
-    /* resize: both; */
-    resize: horizontal;
+    opacity: 0.5;
 }
-
-textarea {
-    resize: none;
-    margin: 50px;
-}
+/* 
+ Note:
+    display: none; removes the element from the page but
+    visibility: hidden; will hide the element but keep it in the page */
