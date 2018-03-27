@@ -8,36 +8,15 @@ body {
     direction: ltr;
 }
 
-.container {
-    width: 500px;
-    height: 400px;
-    margin: 50px auto;
-    background-color: #EEE;
-    display: flex;
-}
-
-.container div {
-/*    width: 300px;*/
-    background: #080;
-    max-height: 100px;
-}
-
-.container .one {
-    background-color: #080;
-}
-
-.container .two {
-    background-color: #00F;
-}
-
-.container .three {
+div {
+    width: 100px;
+    height: 100px;
     background-color: #F00;
-/*    flex: flex-grow flex-shrink flex-basis;*/
-/*    flex: 0 1 auto;*/
-    flex: 1 1 auto;
-    flex: 1 2 50px;
+    color: #FFF;
+    transition: width 1s, background-color 2s;
 }
 
-.container .four {
-    background-color: #e4b016;
+div:hover {
+    width: 200px;
+    background-color: #00f;
 }
