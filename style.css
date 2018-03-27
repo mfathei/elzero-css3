@@ -11,14 +11,8 @@ body {
 div {
     border: 1px solid #CCC;
     padding: 10px;
-    -webkit-column-count: 4;
-    column-count: 4;
-    -webkit-column-gap: 100px;
-    column-gap: 100px;
-    -webkit-column-rule: 2px solid #080;
-    column-rule: 2px solid #080;
-    column-width: 500px;
-    -webkit-column-width: 500px;
+    -webkit-columns: auto auto;
+    columns: 300px 4;
 }
 
 div h2 {
