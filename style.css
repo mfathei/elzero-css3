@@ -9,8 +9,14 @@ body {
 }
 
 div {
-    --webkit-column-count: 3;
-    column-count: 3;
-    --webkit-column-gap: 100px;
+    border: 1px solid #CCC;
+    padding: 10px;
+    -webkit-column-count: 4;
+    column-count: 4;
+    -webkit-column-gap: 100px;
     column-gap: 100px;
+    -webkit-column-rule: 2px solid #080;
+    column-rule: 2px solid #080;
+    column-width: 500px;
+    -webkit-column-width: 500px;
 }
