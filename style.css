@@ -8,44 +8,107 @@ body {
     direction: ltr;
 }
 
-div {
+.first {
     width: 100px;
     height: 100px;
     top: 10px;
-    left: 10px;
+    left: 20px;
     background-color: dodgerblue;
     position: absolute;
     animation-name: moving;
     animation-duration: 3s;
-    animation-iteration-count: 3;
-    animation-delay: 3s;
+    animation-iteration-count: 1;
+    animation-delay: 0;
     /* animation-fill-mode: forwards; */
-    animation-fill-mode: backwords;
+    animation-fill-mode: none;
+    animation-play-state: running;
+    /* animation-play-state: paused; */
+    animation-timing-function: ease;
+}
+
+
+.second {
+    width: 100px;
+    height: 100px;
+    top: 10px;
+    left: 130px;
+    background-color: rgb(191, 30, 255);
+    position: absolute;
+    animation-name: moving;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-delay: 0;
+    /* animation-fill-mode: forwards; */
+    animation-fill-mode: none;
+    animation-play-state: running;
+    /* animation-play-state: paused; */
+    animation-timing-function: ease-in;
+}
+
+
+.third {
+    width: 100px;
+    height: 100px;
+    top: 10px;
+    left: 240px;
+    background-color: rgb(255, 30, 79);
+    position: absolute;
+    animation-name: moving;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-delay: 0;
+    /* animation-fill-mode: forwards; */
+    animation-fill-mode: none;
+    animation-play-state: running;
+    /* animation-play-state: paused; */
+    animation-timing-function: ease-out;
+}
+
+
+.fourth {
+    width: 100px;
+    height: 100px;
+    top: 10px;
+    left: 350px;
+    background-color: rgb(255, 233, 30);
+    position: absolute;
+    animation-name: moving;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-delay: 0;
+    /* animation-fill-mode: forwards; */
+    animation-fill-mode: none;
+    animation-play-state: running;
+    /* animation-play-state: paused; */
+    animation-timing-function: ease-in-out;
+}
+
+
+.fifth {
+    width: 100px;
+    height: 100px;
+    top: 10px;
+    left: 460px;
+    background-color: rgb(30, 34, 255);
+    position: absolute;
+    animation-name: moving;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-delay: 0;
+    /* animation-fill-mode: forwards; */
+    animation-fill-mode: none;
+    animation-play-state: running;
+    /* animation-play-state: paused; */
+    animation-timing-function: linear;
 }
 
 @keyframes moving {
-    /* from {
-        background-color: dodgerblue;
-    }
-    to {
-        background-color: fuchsia;
-    } */
-    0%, 100% {
+
+    0% {
         top: 10px;
-        left: 10px;
-        background-color: #FF0;
     }
-    25% {
-        top: 10px;
-        left: 200px;
-    }
-    50% {
-        top: 200px;
-        left: 200px;
-    }
-    75% {
-        top: 200px;
-        left: 10px;
-        background-color: #0FF;
+
+    100% {
+        top: 420px;
     }
 }
