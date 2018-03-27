@@ -20,3 +20,8 @@ div {
     column-width: 500px;
     -webkit-column-width: 500px;
 }
+
+div h2 {
+    -webkit-column-span: all;
+    column-span: all;
+}
