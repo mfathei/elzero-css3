@@ -10,6 +10,8 @@ body {
 
 /* transition : Property | Duration | Timing Function | Delay */
 
+/* http://www.css3beziercurve.net/ */
+
 div {
     width: 1000px;
 }
@@ -30,9 +32,9 @@ div:hover p {
 }
 
 div p:first-of-type {
-    transition-timing-function: steps(4, start);
+    transition-timing-function: cubic-bezier(0.05, 0.94, 0.94, 0.06)
 }
 
 div p:nth-of-type(2) {
-    transition-timing-function: steps(4, end);
+    transition-timing-function: linear;
 }
