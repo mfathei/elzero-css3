@@ -8,12 +8,17 @@ body {
     direction: ltr;
 }
 
+/* transition : Property | Duration | Timing Function | Delay */
+
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties */
+
 div {
     width: 100px;
     height: 100px;
     background-color: #F00;
     color: #FFF;
-    transition: width 1s, background-color 2s;
+    transition-property: width, background-color;
+    transition-duration: 1s, 2s;
 }
 
 div:hover {
