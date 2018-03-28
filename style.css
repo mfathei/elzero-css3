@@ -4,6 +4,23 @@
     box-sizing: border-box;
 }
 
-:checked {
-    width: 120px;
+div {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #CCC;
+}
+
+:disabled {
+    background-color: brown;
+}
+
+:enabled {
+    background-color: yellow;
+}
+
+
+/* empty means no text and no sub elements */
+
+:empty {
+    background-color: blue;
 }
