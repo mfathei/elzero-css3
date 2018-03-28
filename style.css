@@ -4,7 +4,8 @@
     box-sizing: border-box;
 }
 
-section :first-child{
+/* note: first child inside section is not div so it will be black not red */
+section div:first-child{
     color: red;
 }
 
