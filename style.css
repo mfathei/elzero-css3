@@ -6,37 +6,16 @@
 
 div, p {
     width: 200px;
-    border: 1px solid #CCC;
     margin: 10px;
+    font-family: 'Chicle', cursive;
 }
-
-/* n+number means select * elements start from number like 3 ASC */
-:nth-child(n+3){
-    color: blue;
-}
-
-/* -n+number means select * elements start from number like 3 DESC */
-:nth-child(-n+8){
-    color: yellow;
-}
-
-/* n+number means select * div elements start from number like 3 ASC */
-/* div:nth-child(n+3){
-    color: blue;
-} */
-
-/* -n+number means select * div elements start from number like 3 DESC */
-/* div:nth-child(-n+8){
-    color: yellow;
-} */
-
-
 /* 
-2x0+1 = [1]
-2x1+1 = [3]
-2x2+1 = [5]
-2x3+1 = [7] 
+@font-face{
+    font-family: 'Mahdy';
+    src: url('fonts/mahdy.ttf');
+    src: url('fonts/mahdy.otf');
+    src: url('fonts/mahdy.woff');
+    src: url('fonts/mahdy.woff2');
+    src: url('fonts/mahdy.svg');
+} 
 */
-div:nth-child(2n+1){ /* 2n+1 = odd */
-    color: red;
-}
