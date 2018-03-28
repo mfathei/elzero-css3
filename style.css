@@ -23,6 +23,14 @@
     animation: snake 1.5s infinite ease-in-out;
 }
 
+
+/* 
+Resources
+    http://www.theappguruz.com/tag-tools/web/CSSAnimations/
+    https://daneden.github.io/animate.css/
+    http://ianlunn.github.io/Hover/ 
+*/
+
 .loading span:nth-of-type(2) {
     left: 20px;
     animation-delay: 0.2s;
