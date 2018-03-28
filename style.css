@@ -4,14 +4,20 @@
     box-sizing: border-box;
 }
 
-section div:first-of-type {
+section{
+    border: 1px solid #CCC;
+    margin: 10px;
+}
+
+p:only-child {
     color: red;
 }
 
-section div:nth-of-type(3) {
-    color: red;
+div:only-of-type {
+    color: blue;
 }
 
-section div:last-of-type {
-    color: red;
+::selection {
+    background-color: darkslateblue;
+    color: cyan;
 }
