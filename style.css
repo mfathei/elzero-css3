@@ -4,47 +4,6 @@
     box-sizing: border-box;
 }
 
-.loading {
-    width: 500px;
-    border: 1px solid #CCC;
-}
-
-
-/* next */
-
-
-/* p~span {
-    color: #F00;
-} */
-
-
-/* start with */
-
-
-/* [attribute ^= value]{} */
-
-
-/* [class ^="os"] {
-    color: #F00;
-} */
-
-
-/* end with */
-
-
-/* [attribute $= value]{} */
-
-
-/* [class $="y"] {
-    color: #F00;
-} */
-
-
-/* contains */
-
-
-/* [attribute *= value]{} */
-
-[class*="d"] {
-    color: #F00;
+:checked {
+    width: 120px;
 }
