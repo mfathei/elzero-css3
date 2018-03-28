@@ -15,32 +15,7 @@ nth-child
 nth-of-type (number, formula, keyword)
 */
 
-/* any element type third inside its parent */
-:nth-child(3){
-    color: red;
-}
-
-div:nth-child(8){
-    color: blue;
-}
-
-/* note: third element is p not div */
-div:nth-child(3){
-    color: yellow;
-}
-
-/* this will color all odd div elements but will count p elements */
-div:nth-child(odd){
-    background-color: dimgrey;
-}
-
-/* ================================= */
-/* third div in the parent note it will ignore p element */
-div:nth-of-type(3){
-    color: green;
-}
-
-/* this will color all even div elements but will ignore p elements */
-div:nth-of-type(even){
+/* this will color all even div elements in descending order but will ignore p elements */
+div:nth-last-of-type(even){
     color: gainsboro;
 }
