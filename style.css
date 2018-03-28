@@ -4,100 +4,54 @@
     box-sizing: border-box;
 }
 
-.container {
-    width: 250px;
+.loading {
+    width: 200px;
     height: 50px;
-    margin: 10px;
-    float: left;
-    font-family: Arial, Tahoma;
-    font-weight: bold;
-    text-align: center;
-}
-
-.container .box {
-    height: 50px;
-    line-height: 50px;
-    color: #FFF;
+    margin: 20px auto;
     position: relative;
-    z-index: 2;
 }
 
-.container a {
-    display: inline-block;
-    width: 100%;
-    height: 50px;
-    line-height: 50px;
-    background-color: #333;
-    color: #FFF;
-    text-decoration: none;
-    position: relative;
-    top: -50px;
-    z-index: 1;
-}
-
-.container:hover a {
-    top: 0;
-}
-
-.normal:before {
+.loading span {
     display: block;
-    padding: 10px;
-    margin-bottom: 10px;
-    content: "Normal Hover"
+    position: absolute;
+    bottom: 0;
+    width: 9px;
+    height: 5px;
+    background-color: #9B59b6;
+    animation: waving 1.5s infinite ease-in-out;
 }
 
-.normal .box {
-    background-color: #62C8F8
+.loading span:nth-of-type(2) {
+    left: 11px;
+    animation-delay: 0.2s;
 }
 
-.transition:before {
-    display: block;
-    padding: 10px;
-    margin-bottom: 10px;
-    content: "Transition Hover"
+.loading span:nth-of-type(3) {
+    left: 22px;
+    animation-delay: 0.4s;
 }
 
-.transition .box {
-    background-color: #3B5998;
+.loading span:nth-of-type(4) {
+    left: 33px;
+    animation-delay: 0.6s;
 }
 
-.transition a {
-    transition: all 0.5s ease-in-out;
+.loading span:nth-of-type(5) {
+    left: 44px;
+    animation-delay: 0.8s;
 }
 
-.animation:before {
-    display: block;
-    padding: 10px;
-    margin-bottom: 10px;
-    content: "Animation Hover"
-}
-
-.animation .box {
-    background-color: #C8302A
-}
-
-.animation:hover a {
-    transform-origin: top;
-    animation: swinging 1.5s ease-in-out;
-}
-
-@keyframes swinging {
-    0% {
-        transform: rotateX(-50deg);
-    }
-    20% {
-        transform: rotateX(50deg);
-    }
-    40% {
-        transform: rotateX(-30deg);
-    }
-    60% {
-        transform: rotateX(30deg);
-    }
-    80% {
-        transform: rotateX(-30deg);
-    }
+@keyframes waving {
+    0%,
+    50%,
     100% {
-        transform: rotateX(0deg);
+        height: 5px;
+        transform: translateY(0);
+        background-color: #9B59B6;
+    }
+    25% {
+        height: 30px;
+        transform: translateY(15px);
+        background-color: #3498D6;
     }
 }
