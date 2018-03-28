@@ -10,12 +10,33 @@ div, p {
     margin: 10px;
 }
 
-/* 
-nth-child 
-nth-of-type (number, formula, keyword)
-*/
+/* n+number means select * elements start from number like 3 ASC */
+:nth-child(n+3){
+    color: blue;
+}
 
-/* this will color all even div elements in descending order but will ignore p elements */
-div:nth-last-of-type(even){
-    color: gainsboro;
+/* -n+number means select * elements start from number like 3 DESC */
+:nth-child(-n+8){
+    color: yellow;
+}
+
+/* n+number means select * div elements start from number like 3 ASC */
+/* div:nth-child(n+3){
+    color: blue;
+} */
+
+/* -n+number means select * div elements start from number like 3 DESC */
+/* div:nth-child(-n+8){
+    color: yellow;
+} */
+
+
+/* 
+2x0+1 = [1]
+2x1+1 = [3]
+2x2+1 = [5]
+2x3+1 = [7] 
+*/
+div:nth-child(2n+1){ /* 2n+1 = odd */
+    color: red;
 }
