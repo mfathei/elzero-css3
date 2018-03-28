@@ -7,3 +7,7 @@
 section :not(p) {
     color: #F00
 }
+
+section :not(.test) {
+    color: #FF0
+}
