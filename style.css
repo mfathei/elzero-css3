@@ -4,10 +4,10 @@
     box-sizing: border-box;
 }
 
-section :not(p) {
-    color: #F00
+section :first-child{
+    color: red;
 }
 
-section :not(.test) {
-    color: #FF0
+section :last-child{
+    color: red;
 }
